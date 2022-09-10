@@ -9,8 +9,8 @@ function onFormSubmit(event) {
   /*   event.currentTarget.elements.email.value
   event.currentTarget.elements.password.value; */
 
-  if (email.value === "" || password.value === "") {
-    alert("Заповніть, будь ласка, всі поля!");
+  if (email.value.trim() === "" || password.value.trim() === "") {
+    return alert("Заповніть, будь ласка, всі поля!");
   }
 
   const formData = new FormData(event.currentTarget);
