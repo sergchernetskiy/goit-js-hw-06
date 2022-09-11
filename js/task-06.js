@@ -20,11 +20,11 @@ function onInputFocus(event) {
 }
 
 function onAddClass(add) {
-  event.target.classList.add(add);
+  return event.target.classList.add(add);
 }
 
 function onRemoveClass(remove) {
-  event.target.classList.remove(remove);
+  return event.target.classList.remove(remove);
 }
 
 inputRef.addEventListener("blur", onInputFocus);
